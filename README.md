@@ -7,5 +7,5 @@ This is a small rest application that allows to manage stocks
 
 2. run StocksSpringBootApp java class. Recommended IDE is Intellij
 
-3. use the Postman collection attached to run the requests
+3. use the Postman collection "stocks.postman_collection.json" attached to run the requests in order to test the application once it is running
 
