@@ -1,0 +1,128 @@
+{
+	"info": {
+		"name": "Payconiq - stocks",
+		"_postman_id": "fc4a7105-8b2e-52da-bd42-69f764773bf9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Stock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\":\"Google\",\n  \"currentPrice\":1984.50\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stocks",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stocks"
+					]
+				},
+				"description": "create a new stock in the application and persist it in database"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Stock object",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Google\",\n\t\"currentPrice\":1570.50\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stocks/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stocks",
+						"1"
+					]
+				},
+				"description": "create a new stock in the application and persist it in database"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Stocks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Google\",\n\t\"currentPrice\":1570.50\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stocks",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stocks"
+					]
+				},
+				"description": "create a new stock in the application and persist it in database"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Stock price",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"currentPrice\": 118.5432\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stocks/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stocks",
+						"2"
+					]
+				},
+				"description": "create a new stock in the application and persist it in database"
+			},
+			"response": []
+		}
+	]
+}
